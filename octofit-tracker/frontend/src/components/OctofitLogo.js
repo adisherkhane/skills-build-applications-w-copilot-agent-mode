@@ -2,8 +2,9 @@
 import React from 'react';
 import logo from '../logo.svg';
 
+
 const OctofitLogo = () => (
-  <img src={logo} alt="Octofit Logo" style={{ height: '48px', marginRight: '16px' }} />
+  <img src={logo} alt="Octofit Logo" className="octofit-logo" />
 );
 
 export default OctofitLogo;
