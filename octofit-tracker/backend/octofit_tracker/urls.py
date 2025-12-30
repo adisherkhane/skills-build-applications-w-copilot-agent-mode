@@ -24,13 +24,38 @@ def api_root(request):
     api_url = f"https://{codespace_name}-8000.app.github.dev/api/"
     return JsonResponse({"api_root": api_url})
 
+
 def activities_endpoint(request):
     codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
     url = f"https://{codespace_name}-8000.app.github.dev/api/activities/"
     return JsonResponse({"activities_url": url})
 
+def leaderboard_endpoint(request):
+    codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+    url = f"https://{codespace_name}-8000.app.github.dev/api/leaderboard/"
+    return JsonResponse({"leaderboard_url": url})
+
+def teams_endpoint(request):
+    codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+    url = f"https://{codespace_name}-8000.app.github.dev/api/teams/"
+    return JsonResponse({"teams_url": url})
+
+def users_endpoint(request):
+    codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+    url = f"https://{codespace_name}-8000.app.github.dev/api/users/"
+    return JsonResponse({"users_url": url})
+
+def workouts_endpoint(request):
+    codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+    url = f"https://{codespace_name}-8000.app.github.dev/api/workouts/"
+    return JsonResponse({"workouts_url": url})
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api_root),
     path('api/activities/', activities_endpoint),
+    path('api/leaderboard/', leaderboard_endpoint),
+    path('api/teams/', teams_endpoint),
+    path('api/users/', users_endpoint),
+    path('api/workouts/', workouts_endpoint),
 ]
