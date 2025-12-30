@@ -1,0 +1,122 @@
+
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #fbb13c 100%);
+  color: #22223b;
+  min-height: 100vh;
+}
+
+
+.bg-octofit, .navbar.bg-primary {
+  background-color: #2d3142 !important;
+}
+
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #f9fafc !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+
+.navbar-brand span {
+  color: #fbb13c;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ff6f3c !important;
+  background: rgba(251, 177, 60, 0.1);
+  border-radius: 0.5rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3142;
+  font-weight: 700;
+  text-shadow: 1px 2px 8px #fbb13c22;
+}
+
+
+.card {
+  background: #f9fafc;
+  border: 1px solid #fbb13c;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(251, 177, 60, 0.10);
+}
+
+
+.card-title {
+  color: #ff6f3c;
+}
+
+
+.btn-primary, .btn-info, .btn-success, .btn-secondary {
+  background: linear-gradient(90deg, #fbb13c 0%, #ff6f3c 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(251, 177, 60, 0.15);
+  border-radius: 0.5rem;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover, .btn-info:hover, .btn-success:hover, .btn-secondary:hover {
+  background: linear-gradient(90deg, #ff6f3c 0%, #fbb13c 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 111, 60, 0.15);
+}
+
+
+a, .App-link {
+  color: #fbb13c;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover, .App-link:hover {
+  color: #ff6f3c;
+  text-decoration: none;
+}
+
+
+.table {
+  background: #fffbe7;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid #fbb13c;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #fbb13c 0%, #ff6f3c 100%);
+  color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #fff3cd;
+}
+
+
+.modal-content {
+  border-radius: 1rem;
+  border: 2px solid #fbb13c;
+  background: #fffbe7;
+}
+
+.modal-title {
+  color: #ff6f3c;
+}
+
+
+/* Custom Octofit Logo styling */
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  float: left;
+  display: block;
+}
